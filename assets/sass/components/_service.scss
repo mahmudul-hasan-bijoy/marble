@@ -1,0 +1,54 @@
+.service {
+	padding-bottom: 5rem;
+	padding-top: 0;
+	&-title {
+		font-family: var(--roboto-con);
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: var(--primary);
+		padding-bottom: 2rem;
+	}
+	&-box {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 1rem;
+		@include respond (px-991) {
+			padding-bottom: 4rem;
+			align-items: center;
+		}
+		img {
+			transition: 0.5s all ease-in;
+		}
+		&-title {
+			font-size: 1.8rem;
+			font-family: var(--roboto-slab);
+			font-weight: 500;
+			@include respond (px-991) {
+				text-align: center;
+			}
+		}
+		&-subtitle {
+			font-size: 1.3rem;
+			color: var(--subtext);
+			padding-bottom: 1rem;
+			@include respond (px-991) {
+				text-align: center;
+			}
+		}
+		&-subtext {
+			font-family: var(--roboto-con);
+			font-size: 1.4rem;
+			color: var(--service-text);
+			@include respond (px-991) {
+				text-align: center;
+				align-items: center;
+			}
+		}
+		&:hover img {
+			transform: scale(0.98);
+			transition: 0.5s all ease-in;
+		}
+	}
+}

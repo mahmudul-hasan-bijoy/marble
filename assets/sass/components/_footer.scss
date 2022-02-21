@@ -1,0 +1,50 @@
+.footer {
+	padding: 5rem 0;
+	padding-bottom: 3rem;
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
+	font-family: var(--roboto-con);
+	&-box {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		@include respond (px-991) {
+			padding-bottom: 4rem;
+		}
+		&-title {
+			color: var(--footer-title);
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		&-subtext {
+			font-size: 1.4rem;
+		}
+		&-address {
+			font-size: 1.4rem;
+			display: flex;
+			flex-direction: column;
+			gap: 0.8rem;
+			span {
+				display: flex;
+				gap: 1rem;
+				align-items: center;
+				i {
+					font-size: 1.2rem;
+					color: var(--footer-icon);
+				}
+			}
+			&-date {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	&-copyright {
+		font-size: 1.4rem;
+		padding-top: 3rem;
+		text-align: start;
+		@include respond (px-991) {
+			text-align: center;
+		}
+	}
+}

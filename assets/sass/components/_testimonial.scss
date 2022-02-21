@@ -1,0 +1,29 @@
+.testimonial {
+	padding: 6rem 0;
+	background: var(--testimonial-bg);
+	&-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		span {
+			i {
+				font-size: 7rem;
+				color: var(--testimonial-icon);
+				padding-bottom: 2rem;
+			}
+		}
+		&-text {
+			font-family: var(--roboto-slab);
+			font-size: 2rem;
+			font-weight: 400;
+			color: var(--testimonial-text);
+			line-height: 1.7;
+			width: 75rem;
+			@include respond (px-991) {
+				width: 100%;
+			}
+		}
+	}
+}

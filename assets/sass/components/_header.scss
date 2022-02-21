@@ -1,0 +1,39 @@
+header {
+	background-color: var(--nav-bg);
+	nav {
+		height: 12rem;
+		@include respond (phone) {
+			height: 8rem;
+		}
+		.navbar-nav {
+			column-gap: 2rem;
+		}
+		.navbar-brand {
+			font-size: 4rem;
+			font-family: var(--roboto-con);
+			font-weight: 700;
+			letter-spacing: -2px;
+			color: var(--primary) !important;
+			text-transform: uppercase;
+		}
+		.nav-link {
+			font-family: var(--roboto-con);
+			font-size: 1.6rem !important;
+			font-weight: 700;
+			color: var(--primary) !important;
+			text-transform: uppercase;
+			&:hover {
+				color: var(--nav-hover) !important;
+			}
+		}
+		.nav-link.active {
+			color: var(--nav-hover) !important;
+		}
+	}
+	.navbar-light .navbar-toggler {
+		border-color: var(--subtext);
+	}
+	.offcanvas {
+		background-color: var(--secondary);
+	}
+}

@@ -1,0 +1,47 @@
+.features {
+	padding: 10rem 0;
+	padding-bottom: 5rem;
+	&-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		@include respond (px-991) {
+			padding-bottom: 4rem;
+		}
+		&-icon {
+			color: var(--secondary);
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 3.2rem;
+		}
+		.icon-1 {
+			background-color: var(--features-bg-1);
+		}
+		.icon-2 {
+			background-color: var(--features-bg-2);
+		}
+		.icon-3 {
+			background-color: var(--features-bg-3);
+		}
+		.icon-4 {
+			background-color: var(--features-bg-4);
+		}
+		&-title {
+			font-family: var(--roboto-slab);
+			font-size: 1.8rem;
+			color: var(--primary);
+		}
+		&-subtext {
+			font-family: var(--roboto-slab);
+			font-size: 1.4rem;
+			color: var(--subtext);
+			text-align: center;
+		}
+	}
+}
